@@ -13,7 +13,7 @@ def main():
     # ADD YOUR CODE HERE
     ## Added code to reprompt user if they enter invalid data types for the input
 
-    savings_balance = float(input("Welcome. Please enter the starting balance for your savings account: "))
+    savings_balance = float(input("\nWelcome. Please enter the starting balance for your savings account: "))
     savings_interest = float(input("Now, please enter the interest rate for your savings account: "))
     savings_maturity = int(input("Finally, please enter the number of months you would like to set for your savings account growth: "))
 
@@ -22,8 +22,8 @@ def main():
 
     # Print out the interest earned and updated savings account balance with interest earned for the given months.
     # ADD YOUR CODE HERE
-    print(f"\nThe interest you earned for your savings account based on your input was ${interest_earned:,.2f}")
-    print(f"Your final savings account balance after accruing interest based on your input was ${updated_savings_balance:,.2f}\n")
+    print(f"\nThe interest you will earn for your savings account if accrued for {savings_maturity} months is: ${interest_earned:,.2f}")
+    print(f"Your final savings account balance after accruing interest for {savings_maturity} months will be: ${updated_savings_balance:,.2f}\n")
 
     # Prompt the user to set the CD balance, interest rate, and months for the CD account.
     # ADD YOUR CODE HERE
@@ -36,8 +36,8 @@ def main():
 
     # Print out the interest earned and updated CD account balance with interest earned for the given months.
     # ADD YOUR CODE HERE
-    print(f"\nThe interest you earned for your CD account based on your input was ${interest_earned:,.2f}")
-    print(f"Your final CD account balance after accruing interest based on your input was ${updated_cd_balance:,.2f}\n")
+    print(f"\nThe interest you will earn for your CD account if accrued for {cd_maturity} months is: ${interest_earned:,.2f}")
+    print(f"Your final CD account balance after accruing interest for {cd_maturity} months will be: ${updated_cd_balance:,.2f}\n")
 
 if __name__ == "__main__":
     # Call the main function.
